@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EsportProject</title>
+    <link rel="stylesheet" href="/static/css/layui.css">
+</head>
+<body>
+
+<div style="width: 1200px;height: 400px;margin: 20px auto">
+  <table lay-filter="demo">
+    <thead>
+      <tr>
+        <th lay-data="{field:'Team'}">Side</th>
+        <th lay-data="{field:'Result'}">Game result</th>
+        <th lay-data="{field:'Herald'}">First Herald</th>
+        <th lay-data="{field:'Baron'}">First Baron</th>
+        <th lay-data="{field:'Dragons'}">Number of Dragons</th>
+        <th lay-data="{field:'Tower'}">First Tower</th>
+        <th lay-data="{field:'Inhibitor'}">First Inhibitor</th>
+      </tr> 
+    </thead>
+    <tbody>
+      <tr>
+        <td>Red</td>
+        <td>Lose</td>
+        <td>No</td>
+        <td>No</td>
+        <td>1</td>
+        <td>Yes</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Blue</td>
+        <td>Win</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>2</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Blue</td>
+        <td>Lose</td>
+        <td>No</td>
+        <td>No</td>
+        <td>0</td>
+        <td>No</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Red</td>
+        <td>Win</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Blue</td>
+        <td>Win</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>2</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      <tr>
+          <td>Blue</td>
+          <td>win</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>2</td>
+          <td>Yes</td>
+          <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Red</td>
+        <td>Win</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>No</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Red</td>
+        <td>Lose</td>
+        <td>No</td>
+        <td>No</td>
+        <td>1</td>
+        <td>No</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Red</td>
+        <td>Lose</td>
+        <td>No</td>
+        <td>No</td>
+        <td>2</td>
+        <td>Yes</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Red</td>
+        <td>Lose</td>
+        <td>No</td>
+        <td>No</td>
+        <td>1</td>
+        <td>No</td>
+        <td>No</td>
+      </tr>
+    </tbody>
+  </table>
+<script src="/static/layui.js"></script>
+<script>
+    layui.use('form', function(){
+      var table = layui.table;
+ 
+    //switch to stat table
+    table.init('demo', {
+      height: 315 //set height
+      ,limit: 300
+    }); 
+    });
+    </script>
+</body>
+</html>
